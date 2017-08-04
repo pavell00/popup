@@ -8,7 +8,7 @@ import { SinglepopupComponent } from './singlepopup/singlepopup.component';
 import { MultiplepopupComponent } from './multiplepopup/multiplepopup.component';
 import { MenuComponent } from './menu/menu.component';
 
-import {PopupModule} from 'ng2-opd-popup';
+import {PopupModule, Popup} from 'ng2-opd-popup';
 
 @NgModule({
   declarations: [
@@ -22,9 +22,9 @@ import {PopupModule} from 'ng2-opd-popup';
     FormsModule,
     HttpModule,
     routing,
-    PopupModule.forRoot()
+    PopupModule//.forRoot()
   ],
-  providers: [],
+  providers: [Popup],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
